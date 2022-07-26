@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="460.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxscenebuilder.OfficersController">
+   <children>
+      <ButtonBar layoutY="406.0" prefHeight="40.0" prefWidth="373.0">
+         <buttons>
+            <Label minWidth="49.0" prefHeight="17.0" text="Manage:" />
+            <Button fx:id="starshipsButton" mnemonicParsing="false" onAction="#switchToStarshipScene" text="Starships" />
+            <Button fx:id="officersButton" mnemonicParsing="false" onAction="#switchToOfficersView" text="Officers" />
+         </buttons>
+      </ButtonBar>
+      <Button fx:id="getButton" layoutX="12.0" layoutY="369.0" mnemonicParsing="false" onAction="#get" text="Get" />
+      <Button fx:id="getAllButton" layoutX="81.0" layoutY="369.0" mnemonicParsing="false" onAction="#getAll" text="Get All" />
+      <Button fx:id="createButton" layoutX="157.0" layoutY="369.0" mnemonicParsing="false" onAction="#create" text="Create" />
+      <Button fx:id="updateButton" layoutX="236.0" layoutY="369.0" mnemonicParsing="false" onAction="#update" text="Update" />
+      <Button fx:id="deleteButton" layoutX="320.0" layoutY="369.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Label layoutX="27.0" layoutY="39.0" prefHeight="43.0" prefWidth="55.0" text="ID:" />
+      <Label layoutX="27.0" layoutY="74.0" prefHeight="43.0" prefWidth="70.0" text="Name:" />
+      <Label layoutX="27.0" layoutY="126.0" prefHeight="17.0" prefWidth="83.0" text="Rank:" />
+      <TextField fx:id="idText" layoutX="108.0" layoutY="48.0" />
+      <TextField fx:id="nameText" layoutX="108.0" layoutY="83.0" />
+      <ListView fx:id="officerList" layoutX="35.0" layoutY="171.0" prefHeight="141.0" prefWidth="296.0" />
+      <ChoiceBox fx:id="rankDropdown" layoutX="108.0" layoutY="122.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
